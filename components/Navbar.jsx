@@ -104,7 +104,7 @@ export default function Navbar() {
                 color: "#e2e8f0",
               }}
             >
-              Thai<span className="gradient-text">Tuan</span>
+              <span className="gradient-text">Portfolio</span>
             </span>
           </Link>
 

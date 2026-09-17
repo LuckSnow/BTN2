@@ -95,7 +95,7 @@ export default function Footer() {
                     color: "#e2e8f0",
                   }}
                 >
-                  Thai<span className="gradient-text">Tuan</span>
+                  <span className="gradient-text">Portfolio</span>
                 </span>
               </div>
               <p
@@ -161,13 +161,13 @@ export default function Footer() {
                 style={{ display: "flex", flexDirection: "column", gap: "10px" }}
               >
                 <span style={{ color: "var(--text-muted)", fontSize: "14px" }}>
-                  📧 tuan.n23dcpt054@ptit.edu.vn
+                  📧 lucksnow1108@gmail.com
                 </span>
                 <span style={{ color: "var(--text-muted)", fontSize: "14px" }}>
-                  🎓 PTIT - N23DCPT054
+                  🎓 Học Viện Công Nghệ Bưu Chính Viễn Thông
                 </span>
                 <span style={{ color: "var(--text-muted)", fontSize: "14px" }}>
-                  📍 Hà Nội, Việt Nam
+                  📍 TP.Hồ Chí Minh, Việt Nam
                 </span>
               </div>
             </div>

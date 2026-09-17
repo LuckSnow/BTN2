@@ -125,9 +125,8 @@ export default function HomePage() {
                   marginBottom: "36px",
                 }}
               >
-                Sinh viên CNTT tại{" "}
-                <strong style={{ color: "#818cf8" }}>PTIT</strong> — Mã số sinh
-                viên <strong style={{ color: "#818cf8" }}>N23DCPT054</strong>.
+                Sinh viên Công Nghệ Đa Phương Tiện tại{" "}
+                <strong style={{ color: "#818cf8" }}>PTIT</strong>.
                 Đam mê xây dựng ứng dụng web hiện đại, học hỏi công nghệ mới và
                 tạo ra những trải nghiệm số tuyệt vời.
               </p>
@@ -196,7 +195,16 @@ export default function HomePage() {
                 flexShrink: 0,
               }}
             >
-              👨‍💻
+              <img
+                src="/Image/avt.jpg"
+                alt="Nguyen Thai Tuan"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  borderRadius: "50%",
+                }}
+              />
             </div>
           </div>
         </div>

@@ -1,26 +1,26 @@
 const skills = [
   {
     id: 1,
-    name: "HTML",
+    name: "C++",
     icon: "🌐",
     level: 90,
-    category: "Frontend",
-    description: "Ngôn ngữ đánh dấu siêu văn bản, nền tảng của web",
+    category: "Backend",
+    description: "Ngôn ngữ lập trình hướng đối tượng mạnh mẽ và phổ biến",
   },
   {
     id: 2,
-    name: "CSS",
-    icon: "🎨",
+    name: "Python",
+    icon: "🐍",
     level: 85,
-    category: "Frontend",
-    description: "Ngôn ngữ tạo kiểu dáng, bố cục và hiệu ứng cho web",
+    category: "Backend",
+    description: "Ngôn ngữ lập trình đa năng, mạnh trong AI và data",
   },
   {
     id: 3,
-    name: "JavaScript",
+    name: "Java",
     icon: "⚡",
     level: 80,
-    category: "Frontend",
+    category: "Backend",
     description: "Ngôn ngữ lập trình phổ biến cho web động và tương tác",
   },
   {
@@ -54,31 +54,7 @@ const skills = [
     level: 82,
     category: "Tools",
     description: "Hệ thống quản lý phiên bản và nền tảng cộng tác code",
-  },
-  {
-    id: 8,
-    name: "Python",
-    icon: "🐍",
-    level: 72,
-    category: "Backend",
-    description: "Ngôn ngữ lập trình đa năng, mạnh trong AI và data",
-  },
-  {
-    id: 9,
-    name: "Java",
-    icon: "☕",
-    level: 65,
-    category: "Backend",
-    description: "Ngôn ngữ lập trình hướng đối tượng mạnh mẽ và phổ biến",
-  },
-  {
-    id: 10,
-    name: "MySQL",
-    icon: "🗄️",
-    level: 68,
-    category: "Database",
-    description: "Hệ quản trị cơ sở dữ liệu quan hệ phổ biến nhất",
-  },
+  }
 ];
 
 export default skills;

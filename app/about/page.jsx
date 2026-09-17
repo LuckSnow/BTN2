@@ -44,7 +44,16 @@ export default function AboutPage() {
               flexShrink: 0,
             }}
           >
-            👨‍💻
+            <img
+              src="/Image/avt.jpg"
+              alt="Nguyen Thai Tuan"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                borderRadius: "50%",
+              }}
+            ></img>
           </div>
 
           {/* Info */}
@@ -67,7 +76,7 @@ export default function AboutPage() {
                 marginBottom: "16px",
               }}
             >
-              🎓 PTIT · N23DCPT054 · Hà Nội, Việt Nam
+              🎓 PTIT · TP.Hồ Chí Minh · Việt Nam
             </p>
             <p
               style={{
@@ -95,11 +104,11 @@ export default function AboutPage() {
             >
               {[
                 { icon: "📛", label: "Họ tên", value: "Nguyễn Thái Tuấn" },
-                { icon: "🎂", label: "Ngày sinh", value: "01/01/2005" },
-                { icon: "🏫", label: "Trường", value: "PTIT" },
+                { icon: "🎂", label: "Ngày sinh", value: "13/09/2005" },
+                { icon: "🏫", label: "Trường", value: "Học viện Công nghệ Bưu chính Viễn thông" },
                 { icon: "🆔", label: "MSSV", value: "N23DCPT054" },
-                { icon: "📧", label: "Email", value: "tuan.n23dcpt054@ptit.edu.vn" },
-                { icon: "📍", label: "Địa chỉ", value: "Hà Nội, Việt Nam" },
+                { icon: "📧", label: "Email", value: "lucksnow1108@gmail.com" },
+                { icon: "📍", label: "Địa chỉ", value: "Hồ Chí Minh, Việt Nam" },
               ].map((item) => (
                 <div
                   key={item.label}

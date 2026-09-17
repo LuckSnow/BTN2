@@ -25,7 +25,7 @@ export default function ProjectCard({ project }) {
       <div
         style={{
           width: "100%",
-          height: "120px",
+          height: "180px",
           background: "linear-gradient(135deg, rgba(99,102,241,0.15), rgba(139,92,246,0.15))",
           borderRadius: "12px",
           display: "flex",
@@ -33,10 +33,25 @@ export default function ProjectCard({ project }) {
           justifyContent: "center",
           fontSize: "52px",
           marginBottom: "20px",
+          overflow: "hidden",
         }}
       >
-        {image}
+        {image && image.startsWith("/") ? (
+          <img
+            src={image}
+            alt={name}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              borderRadius: "12px",
+            }}
+          />
+        ) : (
+          image
+        )}
       </div>
+
 
       {/* Status Badge */}
       <div style={{ marginBottom: "12px" }}>

@@ -64,7 +64,7 @@ export default async function ProjectDetailPage({ params }) {
             <div
               style={{
                 width: "100%",
-                height: "260px",
+                height: "320px",
                 background:
                   "linear-gradient(135deg, rgba(99,102,241,0.2), rgba(139,92,246,0.2))",
                 borderRadius: "16px",
@@ -74,10 +74,25 @@ export default async function ProjectDetailPage({ params }) {
                 fontSize: "100px",
                 marginBottom: "32px",
                 border: "1px solid rgba(99, 102, 241, 0.2)",
+                overflow: "hidden",
               }}
             >
-              {project.image}
+              {project.image && project.image.startsWith("/") ? (
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    borderRadius: "16px",
+                  }}
+                />
+              ) : (
+                project.image
+              )}
             </div>
+
 
             {/* Title & Status */}
             <div
