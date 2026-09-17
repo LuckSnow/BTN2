@@ -65,8 +65,9 @@ const docsContent = {
 };
 
 export async function generateMetadata({ params }) {
-  const slug = params.slug || [];
-  const key = slug.join("/");
+  const { slug } = await params;
+  const slugArr = slug || [];
+  const key = slugArr.join("/");
   const page = docsContent[key];
   return {
     title: page
@@ -76,8 +77,9 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function DocsPage({ params }) {
-  const slug = params.slug || [];
+export default async function DocsPage({ params }) {
+  const { slug: rawSlug } = await params;
+  const slug = rawSlug || [];
   const key = slug.join("/");
   const page = docsContent[key];
 

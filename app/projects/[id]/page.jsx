@@ -3,7 +3,8 @@ import { notFound } from "next/navigation";
 import projects from "../../../data/projects";
 
 export async function generateMetadata({ params }) {
-  const project = projects.find((p) => p.id === parseInt(params.id));
+  const { id } = await params;
+  const project = projects.find((p) => p.id === parseInt(id));
   if (!project) return { title: "Project not found" };
   return {
     title: `${project.name} | Nguyen Thai Tuan Portfolio`,
@@ -11,8 +12,9 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function ProjectDetailPage({ params }) {
-  const project = projects.find((p) => p.id === parseInt(params.id));
+export default async function ProjectDetailPage({ params }) {
+  const { id } = await params;
+  const project = projects.find((p) => p.id === parseInt(id));
 
   if (!project) {
     notFound();
